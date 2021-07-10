@@ -200,9 +200,9 @@ def sendmail(email, passwd, excel, subject, mess, df, orderedlist, index) :
 	emailids = list(df[list(df.columns.values)[index]])
 	
 	for i in range(len(emailids)) :
-        message = MIMEMultipart()
-        message['From'] = email 
-        message['Subject'] = subject
+		message = MIMEMultipart()
+		message['From'] = email 
+		message['Subject'] = subject
 		print(f"{YELLOW}[+] Sending Email To : {emailids[i]}{NONE}")
 		message['To']=emailids[i]
 		valuelist=list()
@@ -227,7 +227,7 @@ def sendmail(email, passwd, excel, subject, mess, df, orderedlist, index) :
 				sys.exit(-1)
 
 def main():
-	parser = argparse.ArgumentParser(description=f"{RED}{BOLD}[+] Automated Mailer :{GREEN}{BOLD} @whokilleddb{NONE}") 
+	parser = argparse.ArgumentParser(description=f"{RED}{BOLD}[+] Automated Mailer :{GREEN}{BOLD} @itisdb{NONE}") 
 	parser.add_argument('-e', metavar='Email ID', required=True, help="Email ID to use for mailing")
 	parser.add_argument('-s', metavar='Excel Sheet', required=True, help="Path To Excel Sheet") 
 	parser.add_argument('-sl', metavar='Subject Line', required=True, help="Subject Line Of Email")
