@@ -2,12 +2,7 @@
 
 Automate The Boring Email Job :
 
-# Options :
-
-* `-h`  : For help
-* `-e`  : Email ID to use
-* `-s`  : Path to Excel Sheet to read data from 
-* `-sl` : Subject Line Of EMail ID
-* `-m`  : File To Read Message From. 
+Make sure that u turn on third party access or Less app secure option in manage google account
+change the excel file link an the html link for the email sending process rest leave it up to the bot.
 
 ***Note :*** In the text file containing the message put {} in places where you want data from Excel to be inserted
