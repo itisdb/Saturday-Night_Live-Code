@@ -4,6 +4,7 @@ Automate The Boring Email Job :
 
 # Options :
 
+* `-h`  : For help
 * `-e`  : Email ID to use
 * `-s`  : Path to Excel Sheet to read data from 
 * `-sl` : Subject Line Of EMail ID
